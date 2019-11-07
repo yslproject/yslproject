@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>男士香水</title>
+  <link rel="stylesheet" href="../css/table.css">
+  <link rel="stylesheet" href="../public/layui-v2.5.5/layui/css/layui.css">
+</head>
+<body>
+  <!-- 表格 -->
+  <div class="g-table">
+    <div class="g-add">添加</div>
+    <table class="g-tab  layui-table" lay-even lay-skin="row">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>type1</th>
+            <th>type2</th>
+            <th>type3</th>
+            <th>产品名称</th>
+            <th>颜色</th>
+            <th>价格</th>
+            <th>库存</th>
+            <th>图片</th>
+            <th>样式图</th>
+            <th>详情图</th>
+            <th>介绍</th>
+            <th>上架时间</th>
+            <th>设置</th>
+        </tr>
+       </thead>
+    </table>
+</div>
+  </div>
+<!-- 遮罩层 -->
+<div class="mask"></div>
+<!-- 修改弹框 -->
+<div class="modal" style="display: none;">
+  <div class="box">
+      <span>产品名称: </span>
+      <input type="text" class="g-name">
+  </div>
+
+  <div class="box">
+      <span>颜色: </span>
+      <input type="text" class="g-color">
+  </div>
+
+  <div class="box">
+      <span>价格: </span>
+      <input type="text" class="g-price">
+  </div>
+
+  <div class="box">
+      <span>库存: </span>
+      <input type="text" class="g-count">
+  </div>
+  <div class="box">
+      <span>销量: </span>
+      <input type="text" class="g-sales">
+  </div>
+  <div class="box">
+      <span>描述: </span>
+      <input type="text" class="g-intro">
+  </div>
+  <div class="box">
+      <span>商品图片: </span>
+      <input type="file" class="up-img addimg">
+      <button class="up-img-btn">上传</button>
+      <div style="min-width:100px; margin:10px auto; text-align: center;">
+          <img src="" alt="" class="up-res" style="max-width: 300px; max-height: 100px;">
+      </div>
+  </div>
+
+  <div class="box">
+      <span>描述图列表: </span>
+      <input type="file" class="up-imgs addimgs">
+      <button class="up-imgs-btn">上传</button>
+      <div class="img-mask">
+          <div class="up-imglist"></div>
+      </div>
+  </div>
+  <div class="box">
+      <span>日期: </span>
+      <input type="text" class="g-time">
+  </div>
+
+  <div class="btns">
+      <div class="exit">取消</div>
+      <div class="sure">确定</div>
+  </div>
+</div>
+  <script src="../public/layui-v2.5.5/layui/layui.js"></script>
+  <script src="../js/button.js"></script>
+  <script src="../js/mperfume.js"></script>
+</body>
+</html>

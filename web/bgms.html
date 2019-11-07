@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YSL后台管理系统</title>
+    <link rel="shortcut icon" href="img/favicon_76x76.png">
+    <link rel="stylesheet" href="css/bmgs.css">
+    <link rel="stylesheet" href="public/layui-v2.5.5/layui/css/layui.css">
+</head>
+<body>
+    <div class="wrap-title">
+        <!-- 头部 -->
+        <ul class="layui-nav" >
+            <div class="imgbox">
+                <img class="title-img" src="https://res.yslbeautycn.com/build/images/logo@2x.png" style="width:200px"  alt="">
+            </div>
+            <li class="layui-nav-item"><a href="javascript:;" data-id="17" data-title="数据统计图" data-url="table/graph.html"
+                class="site-demo-active" data-type="tabAdd">数据统计图表</a></li>
+            <li class="layui-nav-item">
+              <a href="javascript:;">管理员</a>
+              <dl class="layui-nav-child">
+                <dd class="layui-this"><a href="javascript:;" data-id="18" data-title="密码修改" data-url="table/password.html"
+                    class="site-demo-active" data-type="tabAdd">密码修改</a></dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item"><a href="login.html">退出</a></li>
+            <!-- <li><img src="img/favicon_76x76.png" alt="" style="display: inline-block; width: 50px;"></li> -->
+        </ul>       
+    </div>
+    <!-- 侧边栏 -->
+    <div class="left-nav">
+    <ul class="layui-nav layui-nav-tree layui-bg-cyan layui-inline " lay-filter="demo" style="height:calc(100vh + 60px);">
+        <li class="layui-nav-item layui-nav-itemed ">
+          <a href="javascript:;" >商品管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;" data-id="1" data-title="彩妆" data-url="table/cosmetics.html"
+                class="site-demo-active" data-type="tabAdd">彩妆</a>
+                <ul class="layui-nav-child">
+                    <dd><a href="javascript:;" data-id="2" data-title="唇部" data-url="table/lip.html"
+                        class="site-demo-active" data-type="tabAdd" >唇部</a></dd>
+                    <dd><a href="javascript:;" data-id="3" data-title="面部" data-url="table/face.html" class="site-demo-active" data-type="tabAdd">面部</a></dd>
+                    <dd><a href="javascript:;" data-id="4" data-title="眼部" data-url="table/eyes.html"
+                        class="site-demo-active" data-type="tabAdd">眼部</a></dd>
+                    <dd><a href="javascript:;" data-id="5" data-title="甲油" data-url="table/polish.html"
+                        class="site-demo-active" data-type="tabAdd">甲油</a></dd>
+                    <dd><a href="javascript:;" data-id="6" data-title="套装工具" data-url="table/tool.html"
+                        class="site-demo-active" data-type="tabAdd">套装工具</a></dd>
+                </ul>
+            </dd>
+            <dd><a href="javascript:;">护肤</a>
+                <ul class="layui-nav-child">
+                    <li><a href="javascript:;" data-id="7" data-title="护肤产品" data-url="table/skin.html"
+                        class="site-demo-active" data-type="tabAdd">护肤产品</a>
+                    </li>
+                </ul>
+            </dd>
+            <dd><a href="javascript:;" data-id="8" data-title="香水" data-url="table/perfume.html"
+                class="site-demo-active" data-type="tabAdd">香水</a>
+                <div class="layui-nav-child">
+                    <div><a href="javascript:;" data-id="9" data-title="女士香水" data-url="table/wperfume.html"
+                        class="site-demo-active" data-type="tabAdd">女士香水</a></div>
+                    <div><a href="javascript:;" data-id="10" data-title="男士香水" data-url="table/mperfume.html"
+                        class="site-demo-active" data-type="tabAdd">男士香水</a></div>
+                </div>
+            </dd>
+            <dd><a href="javascript:;" data-id="11" data-title="尊享礼盒" data-url="table/vipbox.html"
+                class="site-demo-active" data-type="tabAdd">尊享礼盒</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;" >销售类表</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;" data-id="12" data-title="订单列表" data-url="table/orderlist.html"
+                class="site-demo-active" data-type="tabAdd">订单列表</a></dd>
+            <dd><a href="javascript:;" data-id="13" data-title="购物车列表" data-url="table/shopcar.html"
+                class="site-demo-active" data-type="tabAdd">购物车列表</a></dd>
+            <dd><a href="javascript:;" data-id="14" data-title="商品评价表" data-url="table/evaluation.html"
+                class="site-demo-active" data-type="tabAdd">商品评价表</a></dd>
+            <dd><a href="javascript:;" data-id="15" data-title="收货地址表" data-url="table/address.html"
+                class="site-demo-active" data-type="tabAdd">收货地址表</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="javascript:;" data-id="16" data-title="用户信息表" data-url="table/userlist.html"
+            class="site-demo-active" data-type="tabAdd">用户信息表</a></li>
+      </ul>
+    </div>
+    <!-- 内容部分 -->
+    <div class="layui-tab" lay-filter="demo" lay-allowclose="true" style="display: inline-block;vertical-align: top;">
+            <ul class="layui-tab-title"></ul>
+            <div class="layui-tab-content"></div>
+    </div>
+     
+       
+    <script src="public/layui-v2.5.5/layui/layui.js"></script>
+    <!-- 监听左侧导航 -->
+    <script>
+        layui.use('element', function(){
+          var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+          //监听导航点击
+          element.on('nav(demo)', function(elem){
+            console.log(elem);
+            
+          });
+        });
+    </script>
+    <script>
+        layui.use(['element', 'layer', 'jquery'], function () {
+        var element = layui.element;
+        // var layer = layui.layer;
+        var $ = layui.$;
+        // 配置tab实践在下面无法获取到菜单元素
+        $('.site-demo-active').on('click', function () {
+            var dataid = $(this);
+            //这时会判断右侧.layui-tab-title属性下的有lay-id属性的li的数目，即已经打开的tab项数目
+            if ($(".layui-tab-title li[lay-id]").length <= 0) {
+                //如果比零小，则直接打开新的tab项
+                active.tabAdd(dataid.attr("data-url"), dataid.attr("data-id"), dataid.attr("data-title"));
+            } else {
+                //否则判断该tab项是否以及存在
+                var isData = false; //初始化一个标志，为false说明未打开该tab项 为true则说明已有
+                $.each($(".layui-tab-title li[lay-id]"), function () {
+                    //如果点击左侧菜单栏所传入的id 在右侧tab项中的lay-id属性可以找到，则说明该tab项已经打开
+                    if ($(this).attr("lay-id") == dataid.attr("data-id")) {
+                        isData = true;
+                    }
+                })
+                if (isData == false) {
+                    //标志为false 新增一个tab项
+                    active.tabAdd(dataid.attr("data-url"), dataid.attr("data-id"), dataid.attr("data-title"));
+                }
+            }
+            //最后不管是否新增tab，最后都转到要打开的选项页面上
+            active.tabChange(dataid.attr("data-id"));
+        });
+ 
+        var active = {
+            //在这里给active绑定几项事件，后面可通过active调用这些事件
+            tabAdd: function (url, id, name) {
+                //新增一个Tab项 传入三个参数，分别对应其标题，tab页面的地址，还有一个规定的id，是标签中data-id的属性值
+                //关于tabAdd的方法所传入的参数可看layui的开发文档中基础方法部分
+                element.tabAdd('demo', {
+                    title: name,
+                    content: '<iframe data-frameid="' + id + '" scrolling="auto" frameborder="0" src="' + url + '" style="width:100%;height:99%;"></iframe>',
+                    id: id //规定好的id
+                })
+                FrameWH();  //计算ifram层的大小
+            },
+            tabChange: function (id) {
+                //切换到指定Tab项
+                element.tabChange('demo', id); //根据传入的id传入到指定的tab项
+            },
+            tabDelete: function (id) {
+                element.tabDelete("demo", id);//删除
+            }
+        };
+        function FrameWH() {
+            var h = $(window).height();
+            $("iframe").css("height",h+"px");
+        }
+    });
+    
+    </script>
+    <!-- <script src="js/bgms.js"></script> -->
+</body>
+</html>
