@@ -96,3 +96,52 @@
     color: #eee;
     background: #5FB878;
 }
+/*添加图窗口的样式*/
+.up-img-btn-1,
+.up-img-btn-2,
+.up-img-btn-3{
+	color: #eee;
+	background: #5FB878;
+	outline: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.up-imglist-3,
+.up-imglist-2{
+    overflow: scroll;
+    width:565px; 
+    height:200px; 
+    display: flex;
+    flex-wrap:wrap;
+    margin:0 auto;
+  }
+.up-imglist-2>div,
+.up-imglist-3>div{
+      position: relative;
+      width:25%;
+      height:100px;
+      text-align: center;
+  }
+.box img{
+	width:80px;
+	position: relative;
+	margin-top:10px;
+}
+.img-list-x{
+	width:15px;
+	height:15px;
+	line-height: 15px;
+	text-align: center;
+	position: absolute;
+	top:10px;
+	color: #eee;
+	right:25px;
+	background:red;
+	border-radius: 50%;
+}
+  .addimg-2{
+      top:28%;
+  }
+  .addimg-3{
+      top:50%;
+  }

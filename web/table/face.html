@@ -6,27 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>面部</title>
   <link rel="stylesheet" href="../css/table.css">
+  <link rel="stylesheet" type="text/css" href="../css/add.css"/>
   <link rel="stylesheet" href="../public/layui-v2.5.5/layui/css/layui.css">
 </head>
 <body>
   <!-- 表格 -->
   <div class="g-table">
     <div class="g-add">添加</div>
-    <table class="g-tab  layui-table" lay-even lay-skin="row">
+    <table class="g-tab  layui-table" lay-even lay-skin="row" >
         <thead>
         <tr>
-            <th>ID</th>
             <th>type1</th>
             <th>type2</th>
             <th>type3</th>
-            <th>产品名称</th>
+            <th>英文名称</th>
+            <th>中文名称</th>
             <th>颜色</th>
             <th>价格</th>
+            <th>介绍</th>
             <th>库存</th>
             <th>图片</th>
             <th>样式图</th>
             <th>详情图</th>
-            <th>介绍</th>
             <th>上架时间</th>
             <th>设置</th>
         </tr>
@@ -37,10 +38,26 @@
 <!-- 遮罩层 -->
 <div class="mask"></div>
 <!-- 修改弹框 -->
-<div class="modal" style="display: none;">
+<div class="modal">
+	<div class="box">
+      <span>商品一类: </span>
+      <input type="text" class="g-type1" placeholder="提示：彩妆/护肤/香水/礼盒">
+  </div>
   <div class="box">
-      <span>产品名称: </span>
-      <input type="text" class="g-name">
+      <span>商品二类: </span>
+      <input type="text" class="g-type2" placeholder="提示：唇部/女士香水等">
+  </div>
+  <div class="box">
+      <span>商品三类: </span>
+      <input type="text" class="g-type3" placeholder="提示：唇膏/唇釉等">
+  </div>
+  <div class="box">
+      <span>英文名称: </span>
+      <input type="text" class="g-enname">
+  </div>
+  <div class="box">
+      <span>中文名称: </span>
+      <input type="text" class="g-chname">
   </div>
 
   <div class="box">
@@ -58,28 +75,32 @@
       <input type="text" class="g-count">
   </div>
   <div class="box">
-      <span>销量: </span>
-      <input type="text" class="g-sales">
-  </div>
-  <div class="box">
       <span>描述: </span>
       <input type="text" class="g-intro">
   </div>
   <div class="box">
       <span>商品图片: </span>
-      <input type="file" class="up-img addimg">
-      <button class="up-img-btn">上传</button>
-      <div style="min-width:100px; margin:10px auto; text-align: center;">
-          <img src="" alt="" class="up-res" style="max-width: 300px; max-height: 100px;">
+      <input type="file" class="addimg-1">
+      <button class="up-img-btn-1">上传</button>
+      <div style="min-width:100px; height:100px; margin:10px auto; text-align: center;">
+          <img src="" alt="" class="up-res">
       </div>
   </div>
 
   <div class="box">
-      <span>描述图列表: </span>
-      <input type="file" class="up-imgs addimgs">
-      <button class="up-imgs-btn">上传</button>
-      <div class="img-mask">
-          <div class="up-imglist"></div>
+      <span>样式图: </span>
+      <input type="file" class="addimg-2">
+      <button class="up-img-btn-2">上传</button>
+      <div class="img-mask-2">
+          <div class="up-imglist-2"></div>
+      </div>
+  </div>
+  <div class="box">
+      <span>详情图: </span>
+      <input type="file" class="addimg-3">
+      <button class="up-img-btn-3">上传</button>
+      <div class="img-mask-3">
+          <div class="up-imglist-3"></div>
       </div>
   </div>
   <div class="box">
@@ -92,8 +113,11 @@
       <div class="sure">确定</div>
   </div>
 </div>
-  <script src="../public/layui-v2.5.5/layui/layui.js"></script>
-  <script src="../js/button.js"></script>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="../js/face.js"></script>
+  <script src="../js/allstyle.js"></script>
+ 	<script src="../js/upload.js"></script>
+  <script src="../public/layui-v2.5.5/layui/layui.all.js"></script>
+
 </body>
 </html>

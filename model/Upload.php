@@ -20,7 +20,7 @@ if($_FILES["file"]["error"]){
         }else{
             //保存文件,   move_uploaded_file 将上传的文件移动到新位置
             move_uploaded_file($_FILES["file"]["tmp_name"],$fileName);//将临时地址移动到指定地址
-            echo "http://localhost:8081/classContent/4-php全栈/练习MVC/web/img/{$imgName}";
+            echo "http://127.0.0.1/YSL/web/img/{$imgName}";
         }
     }else{
         echo "文件类型不对或大小出错";

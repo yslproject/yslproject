@@ -10,12 +10,12 @@ class Good
     public $price;
     public $intro;
     public $count;
-    public $countImg;
     public $img;
     public $imgList;
+    public $countImg;
     public $createTime;
 
-    function __construct($type1,$type2,$type3,$enName,$chName,$color,$price,$intro,$count,$countImg,$img,$imgList,$createTime)
+    function __construct($type1,$type2,$type3,$enName,$chName,$color,$price,$intro,$count,$img,$imgList,$countImg,$createTime)
     {
         $this->type1 = $type1;
         $this->type2 = $type2;
@@ -25,10 +25,10 @@ class Good
         $this->color = $color;
         $this->price = $price;
         $this->intro = $intro;
-        $this->count = $count;
-        $this->countImg = $countImg;
+        $this->count = $count;        
         $this->img = $img;
         $this->imgList = $imgList;
+        $this->countImg = $countImg;
         $this->createTime = $createTime;
     }
 }

@@ -1,13 +1,13 @@
 $('.login').click(function(){
    const name = $('.u-inp').val();
-   const psd =  $('.p-inp').val();
+   const pwd =  $('.p-inp').val();
 
     $.ajax({
         type:'post',
         url:'http://127.0.0.1/YSL/controller/AdminDao.php',
         data:{
             type:'login',
-            name,psd
+            name,pwd
         },
         success(res){
             const obj =JSON.parse(res);
